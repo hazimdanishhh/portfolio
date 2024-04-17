@@ -40,7 +40,7 @@ export default function Content() {
 
       {cardDetails.map(createCard)}
 
-      <a className="btn-cv" href="../public/resume.pdf" target="__blank">
+      <a className="btn-cv" href="./resume.pdf" target="__blank">
         Download CV
       </a>
 
