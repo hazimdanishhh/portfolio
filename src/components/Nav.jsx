@@ -14,7 +14,7 @@ export default function Nav() {
         <div className="content-container left-top">
           <a href="#">
             <img
-              src="../images/profile_photo.jpg"
+              src="./profile_photo.jpg"
               alt="Hazim Danish photo"
               className="profile-photo"
             />
