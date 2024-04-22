@@ -18,7 +18,13 @@ export default function Projects(props) {
           </a>
           <p className="company project">{props.desc}</p>
           {/* Add Image onclick to expand view */}
-          <img className="project-img" src={props.imgSrc} alt="Project Image" />
+          <a href={props.link} target={props.link === "#" ? null : "__blank"}>
+            <img
+              className="project-img"
+              src={props.imgSrc}
+              alt="Project Image"
+            />
+          </a>
           <div className="content-container right right-bottom-right skills-section">
             <ul className="skills-container">
               {props.skills.map(createSkills)}
