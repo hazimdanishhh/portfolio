@@ -8,8 +8,10 @@ import { motion } from "framer-motion";
 export default function App() {
   const [load, setLoad] = useState(false);
 
-  function refreshPage() {
-    setLoad(true);
+  function refreshPage(load) {
+    setTimeout((prev) => {
+      setLoad(!prev);
+    }, 4800);
   }
 
   return (
@@ -33,7 +35,7 @@ export default function App() {
         </motion.div>
       ) : (
         <motion.div
-          onLoad={setTimeout(refreshPage, 4800)}
+          onLoad={refreshPage(load)}
           className="welcome-container"
           initial={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 4 }}

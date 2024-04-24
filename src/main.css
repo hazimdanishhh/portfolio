@@ -270,6 +270,7 @@ li {
 
 .list {
   text-align: start;
+  font-size: 0.9rem;
 }
 
 .btn-cv {
@@ -425,5 +426,9 @@ li {
 
   .right {
     flex-wrap: wrap;
+  }
+
+  .list {
+    font-size: 0.8rem;
   }
 }
